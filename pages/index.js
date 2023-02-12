@@ -36,28 +36,28 @@ async function onSubmit(event) {
   return (
     <div>
       <Head>
-        <title>6D OpenAI Quickstart</title>
-        <link rel="icon" href="/6d.jpg" />
+        <title>BCU OpenAI API Demo</title>
+        <link rel="icon" href="/BCUlogo.png" />
       </Head>
     
     <main className={styles.main}>
-        <img src="/6d.jpg" className={styles.icon} />
-        <h4>六度ai测试</h4>
-        <h3>六度AI编辑部助手0.2版本</h3>       
+        <img src="/bculogolong.JPG" className={styles.img} />
+        <h4>Open AI API demo website for Network Automation Students</h4>
+        <h3>Students AI Assistant Version 0.2</h3>       
 
     <form onSubmit={onSubmit}>
       <label>
-        问题模式：
+        Question Type:
         <select value={questions} onChange={(event) => setQuestions(event.target.value)}>
-          <option value="">请选择工作模式</option>
-          <option value="Improve the English Writing of the following: ">修改英文</option>
-          <option value="Summarize the following article in three paragraphs as bullet points: ">总结要点</option>
-          <option value="回答问题">聊天(中文)</option>
+          <option value="">Please select tasks</option>
+          <option value="Improve the English Writing of the following: ">Improve English Writing</option>
+          <option value="Summarize the following article in three paragraphs as bullet points: ">Summarise</option>
+          <option value="Answer question">General Question</option>
         </select>
       </label> 
       <br />
       <label>
-        内容：
+        Input your task details here:
         <textarea id="myTextArea"
          rows="5" cols="45"
          placeholder="Input your questions here"
@@ -67,13 +67,14 @@ async function onSubmit(event) {
 
       </label>
       <br />
-      <button type="submit">给点想法</button>
+      <button type="submit">Give me some ideas</button>
     </form>
     {/* format the styles.result so that it stays at 70% of the screen in the middle */}
     
     <div className={styles.result}>{result}</div>
     **** above will give the result in plain text ****
-    <div><footer><br></br>基于Open AI开发 Copyright by 6DO Leo</footer> </div>
+    <div><footer><br></br>Based on <a href="https://github.com/openai/openai-quickstart-node">OpenAI Quick Start</a> and
+ modified by <a href="https://scholar.google.co.uk/citations?user=lozWo7wAAAAJ&hl=en">Leo Wang</a></footer> </div>
       </main>
     </div>
 

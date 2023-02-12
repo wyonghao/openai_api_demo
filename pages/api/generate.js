@@ -23,8 +23,7 @@ function generatePrompt(UserInputs) {
   const charater = UserInputs.inputValue;
     //animal[0].toUpperCase() + animal.slice(1).toLowerCase();
     //console.log("check capitalizedAnimal",capitalizedAnimal);
-    //var my_promt = `起一个网名，性别为: ${gender}，要让人感觉"${charater}"，名字可以古朴。所以网名为：`;
     var my_promt = `${questiontype}: "${charater}"`;
-  console.log("提示为：",my_promt);
+  console.log("The prompt is",my_promt);
   return my_promt;
 }

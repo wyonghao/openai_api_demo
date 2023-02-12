@@ -29,6 +29,11 @@
 .main .icon {
   width: 34px;
 }
+
+.main .img {
+  width: 340px;
+}
+
 .main h3 {
   font-size: 32px;
   line-height: 40px;
@@ -65,9 +70,10 @@
   max-width: 70%;
   margin: 0 auto;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 20px;
   /*make a nice rectangular around text*/
-  padding: 20px;
+  padding: 5px;
+  padding-top: 0px;
   border: 1px solid #10a37f;
   border-radius: 4px;
 /* make result preserve the returned format including the newline characters*/
