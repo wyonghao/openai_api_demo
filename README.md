@@ -47,7 +47,7 @@ It is to demo for network automation students using devnet environment.
 
 8. Setup the port forward in virtualbox settings to forward 3000 to the port that the host using for example you can use 5555 as the below picture:
 
-[Screenshot of virtual box port forwarding](/path/to/image.jpg "Optional title")
+[Screenshot of virtual box port forwarding](virtualboxportforwarding.JPG "portforwarding in virtualbox")
 
 
 You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
