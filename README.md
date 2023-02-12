@@ -1,8 +1,6 @@
 # Based on OpenAI API Quickstart - Node.js example app
 
-This is the modifed exmaple based on the "pet name generator app" in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
-
-It is to demo for network automation students using devnet environment.
+This is a modified example based on the "Pet Name Generator App" from the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). The example is built using the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/), and is designed to provide a demonstration for network automation students using the DevNet environment. To get set up, please either follow the instructions  outlined below.
 
 ## Setup
 
