@@ -12,12 +12,13 @@ It is to demo for network automation students using devnet environment.
 
 2. Clone this repository
    ```bash
-   
+   git clone https://github.com/wyonghao/openai_api_demo.git
+   ```
 
 3. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-node
+   $ cd openai_api_demo
    ```
 
 4. Install the requirements
@@ -32,12 +33,21 @@ It is to demo for network automation students using devnet environment.
    $ cp .env.example .env
    ```
 
-6. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
-
+6. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file. The Key shall start with `sk-****`
+      
+   ```bash
+   nano .env
+   ```
+      
 7. Run the app
 
    ```bash
    $ npm run dev
    ```
+
+8. Setup the port forward in virtualbox settings to forward 3000 to the port that the host using for example you can use 5555 as the below picture:
+
+[Screenshot of virtual box port forwarding](/path/to/image.jpg "Optional title")
+
 
 You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
