@@ -47,6 +47,10 @@ It is to demo for network automation students using devnet environment.
 
 8. Setup the port forward in virtualbox settings to forward 3000 to the port that the host using for example you can use 5555 as the below picture:
 
-![Screenshot](virtualboxportforwarding.JPG?raw=true "portforwarding in virtualbox")
+![Screenshot](public/virtualboxportforwarding.JPG?raw=true "portforwarding in virtualbox")
 
-You should now be able to access the app at [http://localhost:5555](http://localhost:5555), which maps to the guest OS' [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+You should now be able to access the app at [http://localhost:5555](http://localhost:5555), which maps to the guest OS' [http://localhost:3000](http://localhost:3000)! 
+
+![website](public/openaibcudemo.png?raw=true "web demo")
+
+For the full context behind this example app, check out the official open AI [tutorial](https://beta.openai.com/docs/quickstart).
