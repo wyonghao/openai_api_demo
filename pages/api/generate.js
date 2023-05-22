@@ -9,7 +9,7 @@ export default async function (req, res) {
   console.log("YW all field: ",req.body);
   console.log("YW,type: ",req.body.questions);
   console.log("YW,value: ",req.body.inputValue);
-  const completion = await openai.createCompletion({
+  const completion = await openai.createChatCompletion({
     //model: "text-davinci-003",
     model: "gpt-3.5-turbo",
     //prompt: generatePrompt(req.body),
