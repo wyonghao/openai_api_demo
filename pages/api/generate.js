@@ -13,11 +13,11 @@ export default async function (req, res) {
     //model: "text-davinci-003",
     model: "gpt-3.5-turbo",
     //prompt: generatePrompt(req.body),
-    messages: [{role: "user", content:  generatePrompt(req.body)}],
+    messages: [{role: "user", content: generatePrompt(req.body)}],
     temperature: 0.6,
     max_tokens: 2048,
   });
-  res.status(200).json({ result: completion.data.choices[0].message });
+  res.status(200).json({ result: completion.data.choices[0].message.content });
 }
 
 /*
