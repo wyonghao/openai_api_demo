@@ -17,8 +17,16 @@ export default async function (req, res) {
     temperature: 0.6,
     max_tokens: 2048,
   });
-  res.status(200).json({ result: completion.data.choices[0].text });
+  res.status(200).json({ result: completion.data.choices[0].message });
 }
+
+/*
+const completion = await openai.createChatCompletion({
+  model: "gpt-3.5-turbo",
+  messages: [{role: "user", content: "Hello world"}],
+});
+console.log(completion.data.choices[0].message);
+*/
 
 function generatePrompt(UserInputs) {
   const questiontype = UserInputs.questions;
