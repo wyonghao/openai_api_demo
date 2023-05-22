@@ -10,8 +10,10 @@ export default async function (req, res) {
   console.log("YW,type: ",req.body.questions);
   console.log("YW,value: ",req.body.inputValue);
   const completion = await openai.createCompletion({
-    model: "text-davinci-003",
-    prompt: generatePrompt(req.body),
+    //model: "text-davinci-003",
+    model: "gpt-3.5-turbo",
+    //prompt: generatePrompt(req.body),
+    messages: [{role: "user", content:  generatePrompt(req.body)}],
     temperature: 0.6,
     max_tokens: 2048,
   });
