@@ -75,7 +75,7 @@ async function onSubmit(event) {
 {/* to make the following div with a copy to clipboard function */}
 <div className={styles.result}>{result} <br></br>
   <CopyToClipboard text={result}>
-      <button>Copy to clipboard with span</button>
+      <button>Copy to clipboard</button>
     </CopyToClipboard>
 </div>
 
