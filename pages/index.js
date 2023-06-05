@@ -2,7 +2,8 @@
 import Head from "next/head";
 import { useState } from 'react';
 import styles from "./index.module.css";
-
+/* import the copy to clipboard function */
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function Home() {
   const [questions, setQuestions] = useState("");
@@ -51,7 +52,7 @@ async function onSubmit(event) {
         <select value={questions} onChange={(event) => setQuestions(event.target.value)}>
           <option value="">Please select tasks</option>
           <option value="Improve the English Writing of the following: ">Improve English Writing</option>
-          <option value="Summarize the following article in three paragraphs as bullet points: ">Summarise</option>
+          <option value="Summarize the following: ">Summarise</option>
           <option value="Answer question">General Question</option>
         </select>
       </label> 
@@ -70,8 +71,14 @@ async function onSubmit(event) {
       <button type="submit">Give me some ideas</button>
     </form>
     {/* format the styles.result so that it stays at 70% of the screen in the middle */}
-    
-    <div className={styles.result}>{result}</div>
+  
+{/* to make the following div with a copy to clipboard function */}
+<div className={styles.result}>{result} <br></br>
+  <CopyToClipboard text={result}>
+      <button>Copy to clipboard with span</button>
+    </CopyToClipboard>
+</div>
+
     **** above will give the result in plain text ****
     <div><footer><br></br>Based on <a href="https://github.com/openai/openai-quickstart-node">OpenAI Quick Start</a> and
  modified by <a href="https://scholar.google.co.uk/citations?user=lozWo7wAAAAJ&hl=en">Leo Wang</a></footer> </div>
