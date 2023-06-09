@@ -44,7 +44,7 @@ async function onSubmit(event) {
     <main className={styles.main}>
         <img src="/bculogolong.JPG" className={styles.img} />
         <h4>Open AI API demo website for Network Automation Students</h4>
-        <h3>Students AI Assistant Version 0.2</h3>       
+        <h3>Students AI Assistant Version 0.3</h3>       
 
     <form onSubmit={onSubmit}>
       <label>
