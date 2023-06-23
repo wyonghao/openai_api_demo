@@ -52,3 +52,10 @@ You should now be able to access the app at [http://localhost:5555](http://local
 ![website](public/openaibcudemo.png?raw=true "web demo")
 
 For the full context behind this example app, check out the official open AI [tutorial](https://beta.openai.com/docs/quickstart).
+
+Note, you might need to run 
+   ```bash
+   $ npm install
+   $ npm update
+   ```
+again after the source code or the APIs are updated 
